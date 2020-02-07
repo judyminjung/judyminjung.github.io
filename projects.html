@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Judy Song ⋆ Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Poppins:100,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="brand">
+                    <div>JUDY SONG</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="resume.html">Resume</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https://judysongportfolio.tumblr.com/">Photography</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="blog.html">blog</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <a href="projects-happythoughts.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/happy.png">
+                            </div>
+                            <div class="subtitle">
+                                Happy Thoughts
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects-interpreter.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/compiler.png">
+                            </div>
+                            <div class="subtitle">
+                                BASIC Language Interpreter
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects-airbnb.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpeg)">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/airbnb.png">
+                            </div>
+                            <div class="subtitle">
+                                Mock Airbnb App
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects-filters.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/filters.png">
+                            </div>
+                            <div class="subtitle">
+                                Image Filters
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects-twentyone.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)">
+                        </div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/twentyone.png">
+                            </div>
+                            <div class="subtitle">
+                                Twenty-One
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
