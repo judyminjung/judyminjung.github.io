@@ -176,5 +176,14 @@ body {
     color: peachpuff;
 }
 
+.credit {
+    color: peachpuff;
+    font-size: 8px;
+}
+
+.credit a{
+    color: peachpuff;
+}
+
 /* INQUIRY */
 
