@@ -107,7 +107,7 @@ body {
 /* PORTFOLIO STYLES */
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .portfolio-item-wrapper {
@@ -131,8 +131,8 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 600px;
+    padding-right: 600px;
 }
 
 .logo-wrapper img{
