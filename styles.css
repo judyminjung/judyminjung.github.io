@@ -190,5 +190,9 @@ body {
     color: peachpuff;
 }
 
-/* INQUIRY */
-
+/* BLOG */
+.one-blog {
+    margin-left: 300px;
+    margin-right: 300px;
+    color: grey;
+}
