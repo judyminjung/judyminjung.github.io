@@ -196,3 +196,7 @@ body {
     margin-right: 300px;
     color: grey;
 }
+
+.blog-img-wrapper img {
+    width: 100%;
+}
