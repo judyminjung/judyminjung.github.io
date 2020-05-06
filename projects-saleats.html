@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Judy Song ⋆ BASIC Interpreter</title>
+    <title>Judy Song ⋆ SalEats</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Poppins:100,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -46,7 +46,14 @@
             <div class="two-column-wrapper">
                 <div class="column1">
                     <div class="profile-image-wrapper">
-                        <img src="images/projectpics/basic.png">
+                        <img src="images/projectpics/SalEats/Index.png">
+                        <img src="images/projectpics/SalEats/Login.png">
+                        <img src="images/projectpics/SalEats/Maps.png">
+                        <img src="images/projectpics/SalEats/Search.png">
+                        <img src="images/projectpics/SalEats/Details.png">
+                        <img src="images/projectpics/SalEats/favorites.png">
+                        <img src="images/projectpics/SalEats/removefav.png">
+                        <img src="images/projectpics/SalEats/res.png">
                     </div>
                 </div>
                 <div class="column2">
@@ -55,28 +62,28 @@
                     
                         <h2>DESCRIPTION: </h2>
                         <p>This is a course project from University of Southern California Viterbi School of Engineering CSCI 201 course (Spring 2020). 
-                                After a stressful and sweaty pitch, the Council of SAL is satisfied with your orderscheduling prototype demo application and has unanimously decided to give you the
-                                green light to fully implement your application. This involves pulling real data from
-                                Yelp, issuing orders from SalEats HQ to drivers in real time over the network, and
-                                chaining orders for drivers, much like some other food delivery application whose
-                                name shall not be mentioned. A successful implementation will gain you 5 points and
-                                possibly a good word from the director.
                                 <br><br>
-                                In addition to reading in data from a hard-coded text file, you will use the Yelp API to
-                                retrieve restaurant data. In other words, the restaurant data (i.e. address,
-                                coordinates, etc.) should now be pulled from this API, and you will only have to read
-                                from the text file for the schedule of orders. 
+                                This is a web application that allows users to sign-up and login or authenticate through Google Sign-in. 
+                                The program allows users to search for restaurants by passing in restaurant name, sort option (best match, rating, review count, distance), and coordinates to the Yelp API,
+                                add them to their list of favorites, and schedule reservations for these restaurants on their personal Google calendars.
+
                                 <br><br>
-                                In this assignment, you will create two different programs - a server and a client. You
-                                will implement a networked delivery system where clients (which represent drivers)
+                                I used MySQL database to store the data of the users and their favorited restaurants. The design was a simple three table design:
+                                UserRegistry, RestaurantRegistry, and Favorites table. Each registry table held the appropriate information regarding the specified element
+                                such as login information for user and restaurant address and contact for the restaurant. The favorites table held two foreign keys, one specifying
+                                the user and the other their favorited restaurant. 
+                                
+                                <br><br>
+                                Note worthy: A previous version of this web application read in data from a hard-coded text file and used the Yelp API to
+                                retrieve restaurant data. This version simulated a multithreaded 
+                                program running on localhost through a server and a client. 
+                                It was a networked delivery system where clients (which represent drivers)
                                 receive orders from the server (which represents the headquarters), and the drivers
-                                will deliver the orders to the appropriate restaurants. If it seems counterintuitive, you
-                                can think of it as a backwards food delivery system, where food is delivered to
-                                restaurants. Alternatively, your drivers are delivering ingredients for the orders to the
-                                restaurants. 
+                                will deliver the orders to the appropriate restaurants.
                         </p>
                     
-                        <p><h2>Program:</h2> C++</p>
+                        <p><h2>Technologies:</h2> HTML/CSS, JavaScript, Java, JSP, MySQL, Eclipse, Tomcat</p>
+                        <p><h2>APIs:</h2><a href="https://developers.google.com/identity/sign-in/web/sign-in">Google Sign-in</a>, <a href="https://developers.google.com/calendar/overview">Google Calendar</a>, <a href="https://developers.google.com/maps/documentation/javascript/tutorial">Google Maps</a>, <a href="https://www.yelp.com/developers/documentation/v3/get_started">Yelp Business Search</a></p>
                     </div>
                 </div>
             </div>
